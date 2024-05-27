@@ -12,9 +12,3 @@
     border: 1px solid blue;
 }
 
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    
-}
