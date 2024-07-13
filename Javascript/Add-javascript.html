@@ -2,27 +2,27 @@
 
 <head>
     
-    <title>Variables and Opertaions</title>
+    <title>Scope</title>
 
     <script>
 
-       function displayInfo (firstName,lastName) {
+       let globalscope = "This is global Scope";
 
-        let fullName = "My full name is "+ firstName+ " " +lastName;
-        console.log(fullName);
-        console.log("---------")
-        
+       function testfun () {
+
+        console.log(globalscope);
+        let localscope = "This is local Scope";
+        console.log(localscope)
        }
 
-       displayInfo("Chintaka","Amarasinghe");
-       displayInfo("Dammika","Amarasinghe");
-       displayInfo("Kaduwela","Wasantha");
-       displayInfo("Karate","Dhammika");
-        
+       testfun();
+
+       console.log(globalscope);
+       console.log(localscope);
     </script>
     
 </head>
 <body>
-    <h1>h</h1>
+    <h1>Scope</h1>
 </body>
 </html>
