@@ -2,14 +2,27 @@
 
 <head>
     
-    <title>Destructuring</title>
+    <title>Arrow Functions Demo</title>
 
     <script>
 
-     const mynamelist = ["Amal", "Kamal", "Nuwan" , "Jaliya"];
+    function normalfunction (a,b) {
+         return a+b;
+    }
 
-     let [name01,name03,namefour,name2] = mynamelist;
-     console.log(name01,name2,namefour,name03);
+    console.log(normalfunction (7,2));
+
+   
+
+
+    const arrowFunction = (c,d) => {
+        return c+d;
+    }
+
+    console.log(arrowFunction(2,3));
+
+    const arrowFunction1 = (e,f) =>  e+f;
+    console.log(arrowFunction(1,3));
     </script>
     
 </head>
