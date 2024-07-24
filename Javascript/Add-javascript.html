@@ -8,12 +8,19 @@
 
 
         const array1 = [1,2,3];
-
-        const array2 = array1;
-
+        const array2 = [...array1];
         array1[1]=18;
+        console.log(array1,array2); // Copy from array
 
-        console.log(array2);
+        const obj1 = {
+            first: 10,
+            second: 20,
+            third: 30
+        }
+
+        const obj2 = {...obj1}
+        obj1.first = 1;
+        console.log(obj1,obj2);  // Copy from object
          
        
     
